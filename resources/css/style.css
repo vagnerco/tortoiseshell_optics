@@ -1,0 +1,201 @@
+/*Global Variables*/
+html{
+  color: black;
+  font-size: 18px;
+  font-family: Helvetica;
+
+}
+span{
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*Flex Container*/
+.fc{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+/*Container*/
+.c{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+/*Header CSS*/
+header{
+  overflow: auto;
+  z-index: 10;
+  color: white;
+  background-color: cadetblue;
+}
+header img{
+  height: 1.5rem;
+  width: auto;
+  padding: 0 1rem 0 0.5rem;
+}
+header h2{
+  padding: 0.66rem 0;
+  font-size: 1rem;
+}
+
+/*Banner*/
+.banner{
+  flex-grow: 3;
+  width: auto;
+  height: 25rem;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#headline{
+  background-color: white;
+  width: 20em;
+  padding: 2em 3em;
+  top: 9em;
+  text-align: left;
+}
+#headline h1{
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+#headline h3{
+  font-weight: bold;
+}
+/*NAV*/
+nav {
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+nav .desktop{
+
+}
+nav .tablet{
+  display: none;
+}
+nav li{
+  display: inline-flex;
+  padding: 0px 10px;
+}
+
+/*Main Content with Product List*/
+main .fc{
+  display: flex;
+  justify-content: space-between;
+  margin: 3em auto 3em auto;
+}
+.product-pen{
+  width: 30%;
+}
+.product-watch{
+  width: 30%;
+}
+.product-glasses{
+  width: 30%;
+}
+.productimg{
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productimg img{
+  max-width: 5rem;
+}
+ .producttext{
+   display: block;
+   text-align: center;
+   padding: 0.5em;
+   text-align: center;
+}
+/*Location and Hours styling*/
+.lochours{
+  padding-top: 3rem;
+  width: 35%;
+  height: 200px;
+}
+.box{
+  background-color: cadetblue;
+  color: white;
+  text-align: left;
+}
+.blacktext{
+  color: black;
+  text-align: left;
+}
+
+/*Footer*/
+footer {
+ padding: 4rem;
+}
+
+/*Tablet Code*/
+@media only screen and (max-width: 1024px) {
+  .lochours{
+    padding-top: 3rem;
+    width: 35%;
+    height: 200px;
+  }
+}
+
+/*Mobile Screen*/
+@media only screen and (max-width: 470px) {
+  .product-pen{
+    width: 90%;
+  }
+  .product-watch{
+    width: 90%
+  }
+  .product-glasses{
+    width: 90%
+  }
+  #headline{
+    width: 100%;
+    background-color: white;
+    margin: auto 0;
+    padding: 2rem 1rem 1rem 3rem;
+  }
+  main .fc{
+    display: flex;
+    justify-content: center;
+    margin: 3em auto 3em auto;
+    flex-direction: column;
+  }
+  .lochours{
+    padding-top: 3rem;
+    width: 80%;
+    height: auto;
+  }
+  .box{
+    background-color: black;
+    text-align: left;
+    padding: 1rem 1rem;
+  }
+  footer {
+    margin-top: 4rem;
+    background-color: white;
+
+  }
+  footer span{
+
+    display: none;
+  }
+}
